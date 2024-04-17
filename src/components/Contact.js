@@ -1,5 +1,7 @@
+// Made by Patel Pratikkumar Harshadbhai – 8868235
 import React, { useState } from 'react';
 
+// Contact component
 function Contact() {
   const groupMembers = [
     { name: 'Patel Meet Vimalkumar', email: 'mpatel2879@conestogac.on.ca' },
@@ -25,7 +27,7 @@ function Contact() {
   };
 
   const handleSubmit = (event) => {
-    event.preventDefault(); // Prevent default form submission
+    event.preventDefault(); 
 
     // Form validation
     if (!formData.name.trim()) {
@@ -52,28 +54,29 @@ function Contact() {
       setErrors(prevErrors => ({ ...prevErrors, message: '' }));
     }
 
-    // Here, you would typically send data to your backend 
     console.log('Form data:', formData);
-
-    // Simulate successful submission
     setIsSubmitted(true);
-
-    // Clear the form fields
     setFormData({ name: '', email: '', message: '' });
+  };
+
+  const handleImageClick = () => {
+    const submitButton = document.getElementById('submit-form');
+    if (submitButton) {
+      submitButton.click();
+    }
   };
 
   return (
     <div>
-      <h1>Contact</h1>
-
-      <h2>Group Members - Contact Info</h2>
-      <ul>
+      <h1 class='contact-header'>Contact Us</h1>
+      <h2 class='contact-'>Group Members - Contact Info</h2>
+      <ol class='contact-list'>
         {groupMembers.map((member) => (
           <li key={member.email}>
-            <b>{member.name}</b>: {member.email}
+            <b>{member.name}</b>: <a href={`mailto:${member.email}`}>{member.email}</a>
           </li>
         ))}
-      </ul>
+      </ol>
 
       <div className="contact-form">
         <form onSubmit={handleSubmit}>
@@ -93,7 +96,10 @@ function Contact() {
             <textarea id="message" name="message" value={formData.message} onChange={handleChange} required />
             {errors.message && <p className="error">{errors.message}</p>}
           </div>
-          <button type="submit">Submit</button>
+          <button type="submit" style={{ display: 'none' }} id="submit-form"></button>
+          <label htmlFor="submit-form">
+            <img src="./send-message.png" alt="Submit" onClick={handleImageClick} />
+          </label>
         </form>
         {isSubmitted && (
           <p>Thank you for your message! We'll get back to you shortly.</p>

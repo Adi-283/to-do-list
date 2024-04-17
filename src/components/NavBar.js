@@ -1,6 +1,8 @@
+// Made by Patel Meet Vimalkumar – 8882879
 import { Link } from 'react-router-dom';
 import '../index.css';
 
+// Used Links to navigate through different pages
 function Navbar() {
   return (
     <nav>

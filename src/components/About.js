@@ -1,20 +1,31 @@
-import '../index.css';
+// Made by Patel Meet Vimalkumar – 8882879
+import React from 'react';
 
-function About() {
-    return (
-      <div>
-        <h1>About Us</h1>
-        <p>This is the final project for the Trends in Web Development course of Level 4.</p>
-        <p>We are Group 10 of Section 4.</p>
-        <p>Our group comprises of 4 members</p>
-        <ol>
-            <li>Patel Meet Vimalkumar – 8882879 </li>
-            <li>Patel Pratikkumar Harshadbhai – 8868235 </li>
-            <li>Patel Prince Janakbhai – 8867414 </li>
-            <li>Mehta Aditya Mehul - 8866740 </li>
-        </ol>
+// About component
+const About = () => {
+  const groupMembers = [
+    { name: 'Patel Meet Vimalkumar', id: '8882879', imagePath: './user4.png' },
+    { name: 'Patel Pratikkumar Harshadbhai', id: '8868235', imagePath: './user3.png' },
+    { name: 'Patel Prince Janakbhai', id: '8867414', imagePath: './user2.png' },
+    { name: 'Mehta Aditya Mehul', id: '8866740', imagePath: './user1.png' }
+  ];
+
+  return (
+    <div className="about-container">
+      <h1>About Us</h1>
+      <div className="group-members">
+        {groupMembers.map(member => (
+          <div key={member.id} className="member">
+            <img src={process.env.PUBLIC_URL + member.imagePath} alt={member.name} />
+            <div className="member-details">
+              <h2>{member.name}</h2>
+              <p>ID: {member.id}</p>
+            </div>
+          </div>
+        ))}
       </div>
-    );
-  }
-  
-  export default About;
+    </div>
+  );
+};
+
+export default About;
