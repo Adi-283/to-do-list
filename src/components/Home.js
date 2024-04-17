@@ -1,3 +1,4 @@
+// Made by Mehta Aditya Mehul - 8866740
 import React, { useState } from 'react';
 
 function Home({ addTodo, todos: initialTodos, toggleComplete, deleteTodo }) {
@@ -11,7 +12,7 @@ function Home({ addTodo, todos: initialTodos, toggleComplete, deleteTodo }) {
   ];
 
   // Initialize todos with sample data
-  const [todos, setTodos] = useState(sampleTodos); // Define setTodos here
+  const [todos, setTodos] = useState(sampleTodos); 
 
   const handleSubmit = (e) => {
     e.preventDefault();
