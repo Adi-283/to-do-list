@@ -1,7 +1,17 @@
-import { useState } from 'react';
+import React, { useState } from 'react';
 
-function Home({ addTodo, todos, toggleComplete, deleteTodo }) {
+function Home({ addTodo, todos: initialTodos, toggleComplete, deleteTodo }) {
   const [newTodo, setNewTodo] = useState('');
+
+  // Sample todo data
+  const sampleTodos = [
+    { id: 1, text: 'Complete homework', completed: false },
+    { id: 2, text: 'Read a book', completed: true },
+    { id: 3, text: 'Go for a run', completed: false }
+  ];
+
+  // Initialize todos with sample data
+  const [todos, setTodos] = useState(sampleTodos); // Define setTodos here
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -11,7 +21,7 @@ function Home({ addTodo, todos, toggleComplete, deleteTodo }) {
 
   return (
     <div>
-      <h1>Home</h1>
+      <h1>To-Do List</h1>
       <form onSubmit={handleSubmit}>
         <input 
           type="text" 

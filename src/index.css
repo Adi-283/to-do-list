@@ -11,3 +11,98 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+/* Navbar */
+nav {
+  background-color: #333;
+  padding: 10px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin-right: 10px;
+}
+
+/* Home */
+.App {
+  text-align: center;
+}
+
+form {
+  margin-bottom: 20px;
+}
+
+input[type="text"] {
+  padding: 8px;
+  margin-right: 10px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+/* About */
+ol {
+  padding-left: 20px;
+}
+
+/* Contact */
+.contact-form {
+  width: 400px; /* Set the width of the form */
+  margin: 0 auto; /* Center the form horizontally */
+  border: 1px solid #ccc; /* Add a border to the form */
+  padding: 20px; /* Add some padding inside the form */
+}
+
+.contact-form label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+}
+
+.contact-form button[type="submit"] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+.contact-form button[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+.contact-form p {
+  margin-bottom: 10px;
+}
+
+
+
+/* Footer */
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+}
+
+footer p {
+  margin: 0;
+}
