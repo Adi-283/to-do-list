@@ -10,20 +10,7 @@ import Footer from './components/Footer';
 
 // App component
 function App() {
-  const [todos, setTodos] = useState([]);
-
-  const addTodo = (newTodoText) => {
-    setTodos([...todos, { id: Date.now(), text: newTodoText, completed: false }]);
-  };
-
-  const toggleComplete = (id) => {
-    setTodos(todos.map(todo => todo.id === id ? { ...todo, completed: !todo.completed } : todo));
-  };
-
-  const deleteTodo = (id) => {
-    setTodos(todos.filter(todo => todo.id !== id));
-  };
-
+  
   return (
     // Used Browser Router for routing in the app
     <Router>
@@ -31,7 +18,7 @@ function App() {
         <h1 className="project-heading">Group 10's Final Project</h1>
         <Navbar /> 
         <Routes>
-          <Route path="/" element={<Home addTodo={addTodo} todos={todos} toggleComplete={toggleComplete} deleteTodo={deleteTodo}  />} />
+          <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>

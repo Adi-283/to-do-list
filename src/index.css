@@ -6,7 +6,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #CCC;
+  background-color: #F6F5F2;
 }
 
 code {
@@ -51,10 +51,11 @@ nav a {
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 2px solid #222;
+  border: 2px solid #DBA979;
   border-radius: 8px;
   padding: 10px;
   margin-top: 10px;
+  background-color: #EADBC8;
 }
 
 .row:first-child {
@@ -74,9 +75,10 @@ nav a {
   display: flex;
   flex-direction: column;
   align-items: center; 
-  border: 3px solid #222; 
+  border: 3px solid #DBA979; 
   border-radius: 12px; 
   padding: 15px; 
+  background-color: #F0EBE3;
 }
 
 .column h1 {
@@ -172,9 +174,10 @@ li {
 }
 
 .member {
-  border: 1px solid #222; 
+  border: 1px solid #DAC0A3; 
   border-radius: 10px; 
   padding: 18px; 
+  background-color: #F0EBE3;
 }
 
 .member img {
@@ -210,7 +213,7 @@ li {
 .contact-form {
   width: 400px; 
   margin: 0 auto; 
-  border: 3px solid #222; 
+  border: 3px solid #DBA979; 
   border-radius: 12px;
   padding: 25px; 
   padding-top: 10px;
@@ -238,7 +241,7 @@ li {
 }
 
 .contact-form img{
-  border: 1px solid #222;
+  border: 1px solid #DBA979;
   border-radius: 20px;
   width: 25px; 
   float: right;
