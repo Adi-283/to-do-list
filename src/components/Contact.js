@@ -1,6 +1,13 @@
 import { useState } from 'react';
 
 function Contact() {
+
+    const groupMembers = [
+        { name: 'Patel Meet Vimalkumar', email: 'mpatel2879@conestogac.on.ca' },
+        { name: 'Patel Pratikkumar Harshadbhai', email: 'ppatel8235@conestogac.on.ca' },
+        { name: 'Patel Prince Janakbhai', email: 'ppatel7414@conestogac.on.ca' },
+        { name: 'Mehta Aditya Mehul', email: 'amehta6740@conestogac.on.ca' },
+      ];
   const [formData, setFormData] = useState({
     name: '',
     email: '',
