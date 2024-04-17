@@ -4,10 +4,10 @@ import React from 'react';
 // About component
 const About = () => {
   const groupMembers = [
-    { name: 'Patel Meet Vimalkumar', id: '8882879', imagePath: './user4.png' },
-    { name: 'Patel Pratikkumar Harshadbhai', id: '8868235', imagePath: './user3.png' },
-    { name: 'Patel Prince Janakbhai', id: '8867414', imagePath: './user2.png' },
-    { name: 'Mehta Aditya Mehul', id: '8866740', imagePath: './user1.png' }
+    { name: 'Patel Meet Vimalkumar', id: '8882879', imagePath: './images/user4.png' },
+    { name: 'Patel Pratikkumar Harshadbhai', id: '8868235', imagePath: './images/user3.png' },
+    { name: 'Patel Prince Janakbhai', id: '8867414', imagePath: './images/user2.png' },
+    { name: 'Mehta Aditya Mehul', id: '8866740', imagePath: './images/user1.png' }
   ];
 
   return (

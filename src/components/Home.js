@@ -94,7 +94,7 @@ function Home() {
             <div className="column">
                 {/* To-Do List */}
                 <h1>To-Do List</h1>
-                <img src="/to-do_icon.png" alt="To-Do List" className="column-image" />
+                <img src="/images/to-do_icon.png" alt="To-Do List" className="column-image" />
                 <form onSubmit={handleSubmit}>
                     <input
                         type="text"
@@ -102,7 +102,7 @@ function Home() {
                         onChange={(e) => setNewTodo(e.target.value)}
                         placeholder="Add a todo..."
                     />
-                    <img src="/add-todo.png" alt="Add" className="icon-button" onClick={() => addTodo(newTodo)} />
+                    <img src="/images/add-todo.png" alt="Add" className="icon-button" onClick={() => addTodo(newTodo)} />
                 </form>
 
                 <ul>
@@ -112,7 +112,7 @@ function Home() {
                             <span style={{ textDecoration: todo.completed ? 'line-through' : 'none' }}>
                                 {todo.text}
                             </span>
-                            <img src="/delete-todo.png" alt="Delete" className="icon-button" onClick={() => deleteTodo(todo.id)} />
+                            <img src="/images/delete-todo.png" alt="Delete" className="icon-button" onClick={() => deleteTodo(todo.id)} />
                         </li>
                     ))}
                 </ul>
@@ -122,7 +122,7 @@ function Home() {
                 {/* Pomodoro Timer */}
                 <div className="row">
                     <h1>Pomodoro Timer</h1>
-                    <img src="/pomodoro_icon.png" alt="Pomodoro Timer" className="column-image" />
+                    <img src="/images/pomodoro_icon.png" alt="Pomodoro Timer" className="column-image" />
                     <div className="timer">
                         <span>{minutes.toString().padStart(2, '0')}:</span>
                         <span>{seconds.toString().padStart(2, '0')}</span>

@@ -98,7 +98,7 @@ function Contact() {
           </div>
           <button type="submit" style={{ display: 'none' }} id="submit-form"></button>
           <label htmlFor="submit-form">
-            <img src="./send-message.png" alt="Submit" onClick={handleImageClick} />
+            <img src="./images/send-message.png" alt="Submit" onClick={handleImageClick} />
           </label>
         </form>
         {isSubmitted && (
