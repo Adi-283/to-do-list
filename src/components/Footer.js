@@ -5,7 +5,7 @@ import React from 'react';
 function Footer() {
   return (
     <footer>
-      <p>&copy; 2024 To-Do List by Group 10. All rights reserved.</p>
+      <p>&copy; 2024 Final Project by Group 10. All rights reserved.</p>
     </footer>
   );
 }
